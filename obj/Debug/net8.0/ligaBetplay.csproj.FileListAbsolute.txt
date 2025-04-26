@@ -1,0 +1,14 @@
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/bin/Debug/net8.0/ligaBetplay
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/bin/Debug/net8.0/ligaBetplay.deps.json
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/bin/Debug/net8.0/ligaBetplay.runtimeconfig.json
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/bin/Debug/net8.0/ligaBetplay.dll
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/bin/Debug/net8.0/ligaBetplay.pdb
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.GeneratedMSBuildEditorConfig.editorconfig
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.AssemblyInfoInputs.cache
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.AssemblyInfo.cs
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.csproj.CoreCompileInputs.cache
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.dll
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/refint/ligaBetplay.dll
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.pdb
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.genruntimeconfig.cache
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ref/ligaBetplay.dll
