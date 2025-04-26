@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ligaBetplay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17298ba3843cde8c4c66734e862da14acad401d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ligaBetplay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ligaBetplay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

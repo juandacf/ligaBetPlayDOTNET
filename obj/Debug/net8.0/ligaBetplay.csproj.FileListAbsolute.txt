@@ -12,3 +12,4 @@
 /home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.pdb
 /home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.genruntimeconfig.cache
 /home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ref/ligaBetplay.dll
+/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/Debug/net8.0/ligaBetplay.sourcelink.json

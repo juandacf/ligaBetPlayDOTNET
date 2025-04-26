@@ -13,7 +13,7 @@ namespace ligaBetplay.resources
         {
             Console.Clear();
             Console.Write("\n ¿Desea repetir esta acción? con el programa? S/N");
-            ConsoleKeyInfo tecla = Console.ReadKey(intercept: true);
+            ConsoleKeyInfo tecla = Console.ReadKey(true);
             char opcion = char.ToUpper(tecla.KeyChar);
             switch (opcion)
             {
@@ -30,7 +30,7 @@ namespace ligaBetplay.resources
         }
     }
 
-    public static int ValidacionNumero (){
+    public static int ValidacionNumero(string message){
         
         while(true){
         try {
@@ -40,14 +40,12 @@ namespace ligaBetplay.resources
         } catch(Exception error){
             Console.Clear();
             Console.WriteLine("El caracter ingresado no es válido. Por favor, vuelva a intentarlo.");
-            Console.WriteLine($"El error fue {error.Message}");
+            Console.WriteLine(message);
+            
         }
 
         }
         
-
-        
-
 
     }
 
