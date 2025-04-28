@@ -7,8 +7,10 @@ namespace ligaBetplay.crud
 {
     public class Staff : Personas
     {
-            Staff(){
 
+        public string rol {get; set;}
+          public Staff(int id, string nombre, string apellido, string rol): base(id, nombre, apellido){
+            this.rol =rol;
         }
     }
 }

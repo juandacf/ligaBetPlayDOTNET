@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ligaBetplay.crud;
 using ligaBetplay.resources;
 
 namespace ligaBetplay
 {
     public class Menus
     {
+        List<Equipos> ContenedorGeneral = new List<Equipos>();
         public static void MenuPrincipal (){
             Console.Clear();
             Console.WriteLine(MenusTexts.MenuPrincipalTexto);
@@ -66,6 +68,8 @@ namespace ligaBetplay
             }
         }
 
-        
+        public static void AgregarEquipos (){
+
+        }
     }
 }
