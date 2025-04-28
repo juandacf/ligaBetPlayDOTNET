@@ -43,12 +43,16 @@ namespace ligaBetplay
             int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
             switch(NumeroEscogido){
                 case 1:
+                Console.WriteLine("Usted ha escogido  la opción 1");
                 break;
                 case 2:
+                Console.WriteLine("Usted ha escogido  la opción 2");
                 break;
                 case 3:
+                Console.WriteLine("Usted ha escogido  la opción 3");
                 break;
                 case 4:
+                Console.WriteLine("Usted ha escogido  la opción 4");
                 break;
                 case 5:
                 MenuPrincipal();
