@@ -4,7 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
 
-namespace ligaBetplay.crud
+namespace ligaBetplay.constructores
 {
     public class Personas
     {

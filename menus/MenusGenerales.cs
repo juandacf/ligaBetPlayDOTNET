@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using ligaBetplay.crud;
 using ligaBetplay.resources;
 
-namespace ligaBetplay
+namespace ligaBetplay.menus
 {
-    public class Menus
+    public class MenusGenerales
     {
         List<Equipos> ContenedorGeneral = new List<Equipos>();
         public static void MenuPrincipal (){
@@ -69,6 +70,14 @@ namespace ligaBetplay
         }
 
         public static void AgregarEquipos (){
+            bool ContinuarSwitch = true;
+
+            while (ContinuarSwitch){
+                Console.WriteLine("Por favor, ingrese el nombre del equipo: ");
+                string NombreEquipo = Console.ReadLine();
+                
+                // string id = Guid.NewGuid().ToString();
+            }
 
         }
     }

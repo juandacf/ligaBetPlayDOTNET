@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ligaBetplay.crud
+namespace ligaBetplay.constructores
 {
     public class Jugadores: Personas
     {
