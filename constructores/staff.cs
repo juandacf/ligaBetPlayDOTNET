@@ -9,7 +9,7 @@ namespace ligaBetplay.constructores
     {
 
         public string rol {get; set;}
-          public Staff(int id, string nombre, string apellido, string rol): base(id, nombre, apellido){
+          public Staff(string id, string nombre, string apellido, string rol, string IdEquipo): base(id, nombre, apellido, IdEquipo){
             this.rol =rol;
         }
     }

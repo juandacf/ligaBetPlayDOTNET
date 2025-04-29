@@ -17,7 +17,7 @@ namespace ligaBetplay.constructores
 
         public int TotalFaltas {get;set;}
 
-        Jugadores(int id, string nombre, string apellido, string Posicion, int GolesAnotados, int TarjetasAmarillas, int TarjetasRojas, int TotalFaltas): base(id,nombre, apellido){
+        Jugadores(string id, string nombre, string apellido, string Posicion, int GolesAnotados, int TarjetasAmarillas, int TarjetasRojas, int TotalFaltas, string IdEquipo): base(id,nombre, apellido, IdEquipo){
             this.Posicion = Posicion;
             this.GolesAnotados = GolesAnotados;
             this.TarjetasAmarillas = TarjetasAmarillas;

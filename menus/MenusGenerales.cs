@@ -85,15 +85,21 @@ namespace ligaBetplay.menus
                         switch(NumeroEscogido){
                 case 1:
                     CrudEquipos.AgregarEquipos();
-                    Console.WriteLine("Cuando oprima enter, se le devolverá al menú principal:");
+                    Console.WriteLine(MenusTexts.MensajeFinal);
                     Console.ReadKey(true);
                     MenuPrincipal();
                 break;
                 case 2:
-                Console.WriteLine("Usted ha escogido  la opción 2");
+                    CrudEquipos.VerEquipos();
+                    Console.WriteLine(MenusTexts.MensajeFinal);
+                    Console.ReadKey(true);
+                    MenuPrincipal();
                 break;
                 case 3:
-                Console.WriteLine("Usted ha escogido  la opción 3");
+                    CrudEquipos.EditarEquipos();
+                    Console.WriteLine(MenusTexts.MensajeFinal);
+                    Console.ReadKey(true);
+                    MenuPrincipal();
                 break;
                 case 4:
                 Console.WriteLine("Usted ha escogido  la opción 4");

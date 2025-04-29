@@ -27,10 +27,30 @@ namespace ligaBetplay.crud
                     Console.WriteLine("El nombre del equipo ya existe. Por favor, presione enter y vuélvalo a intentar de nuevo:");
                     Console.ReadKey(true);
                 }
-                }
-
-                
-
+                }             
         }
+
+        public static void VerEquipos(){
+            Console.Clear();
+            Console.WriteLine(MenusTexts.MensajePrincipalVerequipos);
+            foreach (var equipo in LigaBetplay.MainContainer)
+            {
+                Console.WriteLine($"{equipo.nombre}");
+            }
+        }
+
+        public static void EditarEquipos(){
+            Console.Clear();
+            VerEquipos();
+            string EquipoElegido = Console.ReadLine();
+            bool EquipoExiste = Utils.ValidarNombreEquipo(EquipoElegido);
+            if(EquipoExiste){
+                Console.WriteLine("Por favor, ingrese el nuevo nombre del equipo");
+                string NuevoNombre = Console.ReadLine();
+            } else {
+                Console.WriteLine("El equipo escogido noexsite.");
+            }
+        }
+
     }
 }

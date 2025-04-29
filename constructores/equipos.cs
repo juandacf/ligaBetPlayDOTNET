@@ -17,10 +17,7 @@ namespace ligaBetplay.constructores
         
         public Equipos (string id, string nombre){
             this.id = id;
-            this.nombre = nombre;
-            List<Staff> MiembrosStaff = new List<Staff>();
-            List<Jugadores> Jugadores = new List<Jugadores> ();
-            
+            this.nombre = nombre;            
         }
 
     }

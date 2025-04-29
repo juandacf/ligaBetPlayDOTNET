@@ -22,6 +22,10 @@ namespace ligaBetplay.resources
 
          public static string MensajeRequerirNombreEquipo = $"Por favor, escoja el nombre del equipo a agregar: ";
          public static string MensajeEquipoAgregadoExitoso = $" El equipo fue agregado de manera existosa. Por favor, presione enter para continuar.";
+
+         public static string MensajePrincipalVerequipos = $"Los equipos registrados hasta el momento son:";
+         public static string MensajeFinal = $"Por favor, presione enter.";
+
         }
         
 
