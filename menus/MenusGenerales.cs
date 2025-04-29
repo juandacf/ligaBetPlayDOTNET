@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using ligaBetplay.constructores;
 using ligaBetplay.crud;
 using ligaBetplay.resources;
 
@@ -11,7 +12,7 @@ namespace ligaBetplay.menus
 {
     public class MenusGenerales
     {
-        List<Equipos> ContenedorGeneral = new List<Equipos>();
+        public static List<Equipos> ContenedorGeneral = new List<Equipos>();
         public static void MenuPrincipal (){
             Console.Clear();
             Console.WriteLine(MenusTexts.MenuPrincipalTexto);
@@ -46,7 +47,7 @@ namespace ligaBetplay.menus
             int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
             switch(NumeroEscogido){
                 case 1:
-                Console.WriteLine("Usted ha escogido  la opción 1");
+                CrudEquipos.AgregarEquipos();
                 break;
                 case 2:
                 Console.WriteLine("Usted ha escogido  la opción 2");
@@ -69,16 +70,6 @@ namespace ligaBetplay.menus
             }
         }
 
-        public static void AgregarEquipos (){
-            bool ContinuarSwitch = true;
 
-            while (ContinuarSwitch){
-                Console.WriteLine("Por favor, ingrese el nombre del equipo: ");
-                string NombreEquipo = Console.ReadLine();
-                
-                // string id = Guid.NewGuid().ToString();
-            }
-
-        }
     }
 }

@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Threading.Tasks;
+using ligaBetplay.constructores;
 
 namespace ligaBetplay.resources
 {
@@ -12,14 +14,16 @@ namespace ligaBetplay.resources
         while (true)
         {
             Console.Clear();
-            Console.Write("\n ¿Desea repetir esta acción? con el programa? S/N");
+            Console.Write("\n ¿Desea repetir esta acción? S/N");
             ConsoleKeyInfo tecla = Console.ReadKey(true);
             char opcion = char.ToUpper(tecla.KeyChar);
             switch (opcion)
             {
                 case 'S':
+                    Console.Clear();
                     return true;
                 case 'N':
+                    Console.Clear();
                     return false;
                 default:
                     Console.Write("\nTecla no válida. La preguntá se repetirá ");
@@ -49,6 +53,20 @@ namespace ligaBetplay.resources
 
     }
 
+    public static bool ValidarNombreEquipo(string NombreEquipo){
+
+        foreach(Equipos Equipo in LigaBetplay.MainContainer){
+          if (Equipo.nombre==NombreEquipo){
+            return true;
+          }
+          
+        }
+        return false;
+        
+    }
+
     
     }
-}
+    
+    }
+

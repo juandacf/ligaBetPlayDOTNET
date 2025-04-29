@@ -19,6 +19,12 @@ namespace ligaBetplay.resources
          public static string MenuGestorEstadisticasTexto = $"Escoja la opción de su preferencia: \n1.Ver estadísticas notables de equipos.  \n2.Ver estadísticas notables de jugadores. \n3.Ver estadísticas un equipo específico. \n4. Volver al menú principal";
 
          public static string MensajeOpcionIncorrecta = $"La opción ingresada es incorrecta. POr favor, presione enter y vuelva a intentarlo de nuevo.";
+
+         public static string MensajeRequerirNombreEquipo = $"Por favor, escoja el nombre del equipo a agregar: ";
+         public static string MensajeEquipoAgregadoExitoso = $" El equipo fue agregado de manera existosa. Por favor, presione enter para continuar.";
         }
+        
+
+        
 
     }
