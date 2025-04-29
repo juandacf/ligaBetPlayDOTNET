@@ -10,7 +10,7 @@ internal class LigaBetplay
     public static List<Equipos> MainContainer = new List<Equipos>();
     private static void Main(string[] args)
     {
-        CrudEquipos.AgregarEquipos();
+        MenusGenerales.MenuPrincipal();
 
     }
 }

@@ -26,9 +26,7 @@ namespace ligaBetplay.crud
                 } else {
                     Console.WriteLine("El nombre del equipo ya existe. Por favor, presione enter y vuélvalo a intentar de nuevo:");
                     Console.ReadKey(true);
-                    AgregarEquipos();
                 }
-
                 }
 
                 

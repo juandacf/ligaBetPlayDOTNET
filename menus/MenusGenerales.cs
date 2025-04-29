@@ -20,9 +20,17 @@ namespace ligaBetplay.menus
             switch(NumeroEscogido){
                 case 1:
                 Console.Clear();
-                MenuJugadores();
+                menuEquipos();
+                Console.WriteLine("Presione enter y será devuelto al menú principal.");
+                Console.ReadKey(true);
+                MenuPrincipal();
                 break;
                 case 2:
+                Console.Clear();
+                MenuJugadores();
+                Console.WriteLine("Presione enter y será devuelto al menú principal.");
+                Console.ReadKey(true);
+                MenuPrincipal();
                 break;
                 case 3:
                 break;
@@ -47,7 +55,7 @@ namespace ligaBetplay.menus
             int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
             switch(NumeroEscogido){
                 case 1:
-                CrudEquipos.AgregarEquipos();
+                Console.WriteLine("Usted ha escogido  la opción 1");
                 break;
                 case 2:
                 Console.WriteLine("Usted ha escogido  la opción 2");
@@ -70,6 +78,38 @@ namespace ligaBetplay.menus
             }
         }
 
+        public static void menuEquipos(){
+            Console.Clear();
+            Console.WriteLine(MenusTexts.MenuGestorEquiposTexto);
+            int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
+                        switch(NumeroEscogido){
+                case 1:
+                    CrudEquipos.AgregarEquipos();
+                    Console.WriteLine("Cuando oprima enter, se le devolverá al menú principal:");
+                    Console.ReadKey(true);
+                    MenuPrincipal();
+                break;
+                case 2:
+                Console.WriteLine("Usted ha escogido  la opción 2");
+                break;
+                case 3:
+                Console.WriteLine("Usted ha escogido  la opción 3");
+                break;
+                case 4:
+                Console.WriteLine("Usted ha escogido  la opción 4");
+                break;
+                case 5:
+                MenuPrincipal();
+                break;
+                default:
+                Console.WriteLine(MenusTexts.MensajeOpcionIncorrecta);
+                Console.ReadKey(intercept:true);
+                MenuPrincipal();
+                break;
+
+            }
+
+        }
 
     }
 }
