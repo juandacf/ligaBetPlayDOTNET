@@ -120,5 +120,9 @@ namespace ligaBetplay.menus
 
         }
 
+        public static void menuJugadores(){
+            Console.Clear();
+            
+        }
     }
 }
