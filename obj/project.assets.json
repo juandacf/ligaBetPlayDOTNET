@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/juandavid/.nuget/packages/": {}
+    "/home/juancaballero/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/juandavid/Documents/c#-dotnet/ligaBetplay/ligaBetplay.csproj",
+      "projectUniqueName": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
       "projectName": "ligaBetplay",
-      "projectPath": "/home/juandavid/Documents/c#-dotnet/ligaBetplay/ligaBetplay.csproj",
-      "packagesPath": "/home/juandavid/.nuget/packages/",
-      "outputPath": "/home/juandavid/Documents/c#-dotnet/ligaBetplay/obj/",
+      "projectPath": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
+      "packagesPath": "/home/juancaballero/.nuget/packages/",
+      "outputPath": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/juandavid/.nuget/NuGet/NuGet.Config"
+        "/home/juancaballero/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
