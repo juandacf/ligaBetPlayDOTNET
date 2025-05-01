@@ -20,7 +20,7 @@ namespace ligaBetplay.crud
                 if(!ExisteNombreEquipo){
                     string id = Guid.NewGuid().ToString();
                     Equipos equipo = new Equipos(id, NombreEquipo);
-                    LigaBetplay.MainContainer.Add(equipo);
+                    MenusGenerales.ContenedorGeneral.Add(equipo);
                     Console.WriteLine(MenusTexts.MensajeEquipoAgregadoExitoso);
                     Console.ReadKey(true);
                     switchContinuar = Utils.ValidacionBooleana();
@@ -34,7 +34,7 @@ namespace ligaBetplay.crud
         public static void VerEquipos(){
             Console.Clear();
             Console.WriteLine(MenusTexts.MensajePrincipalVerequipos);
-            foreach (var equipo in LigaBetplay.MainContainer)
+            foreach (var equipo in MenusGenerales.ContenedorGeneral)
             {
                 Console.WriteLine($"{equipo.nombre}");
             }
@@ -49,7 +49,7 @@ namespace ligaBetplay.crud
             if(EquipoExiste){
                 Console.WriteLine("Por favor, ingrese el nuevo nombre del equipo");
                 string NuevoNombre = Console.ReadLine();
-                foreach(var equipo in LigaBetplay.MainContainer){
+                foreach(var equipo in MenusGenerales.ContenedorGeneral){
                     if(EquipoElegido== equipo.nombre){
                         equipo.nombre = NuevoNombre;
                         Console.WriteLine("El nombre del equipo pudo ser actualizado. Por favor, presione enter para volver al menú principal");;
@@ -70,9 +70,9 @@ namespace ligaBetplay.crud
             string EquipoElegido = Console.ReadLine();
             bool EquipoExiste = Utils.ValidarNombreEquipo(EquipoElegido);
             if(EquipoExiste){
-                var EquipoAEliminar = LigaBetplay.MainContainer.FirstOrDefault(Equipo=> Equipo.nombre==EquipoElegido);
+                var EquipoAEliminar = MenusGenerales.ContenedorGeneral.FirstOrDefault(Equipo=> Equipo.nombre==EquipoElegido);
                 if(EquipoAEliminar != null){
-                    LigaBetplay.MainContainer.Remove(EquipoAEliminar);
+                    MenusGenerales.ContenedorGeneral.Remove(EquipoAEliminar);
                     Console.WriteLine("El equipo se ha eliminado con éxito.");
                 }
             }else {

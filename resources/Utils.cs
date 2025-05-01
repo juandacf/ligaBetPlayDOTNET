@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Threading.Tasks;
 using ligaBetplay.constructores;
+using ligaBetplay.menus;
 
 namespace ligaBetplay.resources
 {
@@ -55,7 +56,7 @@ namespace ligaBetplay.resources
 
     public static bool ValidarNombreEquipo(string NombreEquipo){
 
-        foreach(Equipos Equipo in LigaBetplay.MainContainer){
+        foreach(Equipos Equipo in MenusGenerales.ContenedorGeneral){
           if (Equipo.nombre==NombreEquipo){
             return true;
           }

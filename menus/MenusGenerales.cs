@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ligaBetplay.constructores;
 using ligaBetplay.crud;
 using ligaBetplay.resources;
+using ligaBetPlayDOTNET.crud;
 
 namespace ligaBetplay.menus
 {
@@ -33,6 +34,11 @@ namespace ligaBetplay.menus
                 MenuPrincipal();
                 break;
                 case 3:
+                Console.Clear();
+                MenuStaff();
+                Console.WriteLine("Presione enter y será devuelto al menú principal.");
+                Console.ReadKey(true);
+                MenuPrincipal();
                 break;
                 case 4:
                 break;
@@ -55,7 +61,10 @@ namespace ligaBetplay.menus
             int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
             switch(NumeroEscogido){
                 case 1:
-                Console.WriteLine("Usted ha escogido  la opción 1");
+                CrudJugadores.AgregarJugadores();
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuJugadores();
                 break;
                 case 2:
                 Console.WriteLine("Usted ha escogido  la opción 2");
@@ -81,8 +90,8 @@ namespace ligaBetplay.menus
         public static void menuEquipos(){
             Console.Clear();
             Console.WriteLine(MenusTexts.MenuGestorEquiposTexto);
-            int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorJugadoresTexto);
-                        switch(NumeroEscogido){
+            int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorEquiposTexto);
+                switch(NumeroEscogido){
                 case 1:
                     CrudEquipos.AgregarEquipos();
                     Console.WriteLine(MenusTexts.MensajeFinal);
@@ -120,9 +129,28 @@ namespace ligaBetplay.menus
 
         }
 
-        public static void menuJugadores(){
+        public static void MenuStaff(){
             Console.Clear();
-            
+            Console.WriteLine(MenusTexts.MenuGestorStaffTexto);
+            int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorStaffTexto);
+            switch(NumeroEscogido){
+                case 1: 
+                break;
+                case 2: 
+                break;
+                case 3: 
+                break;
+                case 4: 
+                break;
+                case 5: 
+                break;
+                default:
+                Console.WriteLine(MenusTexts.MensajeOpcionIncorrecta);
+                Console.ReadKey(intercept:true);
+                MenuPrincipal();
+                break;
+                
+            }
         }
     }
 }
