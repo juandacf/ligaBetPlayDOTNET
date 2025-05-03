@@ -66,7 +66,7 @@ namespace ligaBetplay.resources
         
     }
 
-    public static bool ValidarNombreJugador (string IdJugador){
+    public static bool ValidarIdJugador (string IdJugador){
 
         foreach (var jugador in MenusGenerales.ContenedorJugadores)
         {

@@ -59,11 +59,26 @@ namespace ligaBetPlayDOTNET.crud
             VerJugadores();
             Console.WriteLine("Por favor, ingrese el id del jugador que desea modificar: ");
             string JugadorElegido = Console.ReadLine();
-            bool JugadorExiste = Utils.ValidarNombreJugador(JugadorElegido);
+            bool JugadorExiste = Utils.ValidarIdJugador(JugadorElegido);
             if(JugadorExiste){
-                
+              Console.WriteLine("Por favor, ingrese el nuevo nombre del jugador");
+              string NuevoNombre = Console.ReadLine();
+              Console.WriteLine("Por favor, ingrese el nuevo apellido del jugador");
+              string NuevoApellido = Console.ReadLine();
+              Console.WriteLine("Por favor, ingrese la nueva posición del jugador");
+              string NuevaPosicion =  Console.ReadLine();
+              foreach (var jugador in MenusGenerales.ContenedorJugadores)
+              {
+                if(jugador.Id==JugadorElegido){
+                    jugador.Nombre = NuevoNombre;
+                    jugador.Apellido = NuevoApellido;
+                    jugador.Posicion = NuevaPosicion;
+                    Console.WriteLine($"La actualización del jugador {jugador.Nombre} {jugador.Apellido} fue efectuada con éxito. ");
+                }
+              }
             } 
-            
+        }
+        public static void EliminarJugadores(){
             
         }
     }
