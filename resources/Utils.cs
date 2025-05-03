@@ -66,6 +66,18 @@ namespace ligaBetplay.resources
         
     }
 
+    public static bool ValidarNombreJugador (string IdJugador){
+
+        foreach (var jugador in MenusGenerales.ContenedorJugadores)
+        {
+            if(jugador.Id==IdJugador){
+                return true;
+            } 
+            
+        }
+        return false;
+    }
+
     
     }
     

@@ -14,6 +14,8 @@ namespace ligaBetplay.menus
     public class MenusGenerales
     {
         public static List<Equipos> ContenedorGeneral = new List<Equipos>();
+
+        public static List<Jugadores> ContenedorJugadores = new List<Jugadores>();
         public static void MenuPrincipal (){
             Console.Clear();
             Console.WriteLine(MenusTexts.MenuPrincipalTexto);
@@ -67,10 +69,16 @@ namespace ligaBetplay.menus
                 MenuJugadores();
                 break;
                 case 2:
-                Console.WriteLine("Usted ha escogido  la opción 2");
+                CrudJugadores.VerJugadores();
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuJugadores();
                 break;
                 case 3:
-                Console.WriteLine("Usted ha escogido  la opción 3");
+                CrudJugadores.EditarJugadores();
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuJugadores();
                 break;
                 case 4:
                 Console.WriteLine("Usted ha escogido  la opción 4");
@@ -83,7 +91,6 @@ namespace ligaBetplay.menus
                 Console.ReadKey(intercept:true);
                 MenuPrincipal();
                 break;
-
             }
         }
 

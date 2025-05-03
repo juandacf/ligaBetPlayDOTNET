@@ -1,4 +1,5 @@
-﻿using ligaBetplay;
+﻿using System.Data;
+using ligaBetplay;
 using ligaBetplay.constructores;
 using ligaBetplay.crud;
 using ligaBetplay.menus;
@@ -8,6 +9,8 @@ internal class LigaBetplay
 {
 
     public static List<Equipos> MainContainer = new List<Equipos>();
+
+    public static List<Jugadores> ContainerJugadores = new List <Jugadores>();
     private static void Main(string[] args)
     {
         MenusGenerales.MenuPrincipal();

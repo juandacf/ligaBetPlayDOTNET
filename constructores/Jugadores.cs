@@ -7,6 +7,7 @@ namespace ligaBetplay.constructores
 {
     public class Jugadores: Personas
     {
+    
         public string Posicion {get;set;}
         
         public int GolesAnotados {get;set;}
@@ -17,12 +18,18 @@ namespace ligaBetplay.constructores
 
         public int TotalFaltas {get;set;}
 
-        Jugadores(string id, string nombre, string apellido, string Posicion, int GolesAnotados, int TarjetasAmarillas, int TarjetasRojas, int TotalFaltas, string IdEquipo): base(id,nombre, apellido, IdEquipo){
+        public Jugadores(string id, string nombre, string apellido,  string IdEquipo, string Posicion): base(id,nombre, apellido, IdEquipo){
+            this.Id = id;
+            this.Nombre = nombre;
+            this.Apellido= apellido;
             this.Posicion = Posicion;
-            this.GolesAnotados = GolesAnotados;
-            this.TarjetasAmarillas = TarjetasAmarillas;
-            this.TarjetasRojas = TarjetasRojas;
-            this.TotalFaltas =TotalFaltas;
+            this.GolesAnotados = 0;
+            this.TarjetasAmarillas = 0;
+            this.TarjetasRojas = 0;
+            this.TotalFaltas = 0;
+            this.IdEquipo = id;
         }
+
+
     }
 }
