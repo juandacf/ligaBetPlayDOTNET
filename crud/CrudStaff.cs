@@ -76,8 +76,24 @@ namespace ligaBetPlayDOTNET.crud
                 Console.WriteLine("El miembro no existe. Presione enter para volver a intentarlo.");
                 Console.ReadKey(true);
             }
+        }
 
-            
+        public static void EliminarStaff(){
+            Console.Clear();
+            VerStaff();
+            Console.WriteLine("Por favor, digite el id del miembro del staff que desea modificar");
+            string MiembroElegido = Console.ReadLine();
+            bool MiembroExiste = Utils.ValidarIdStaff(MiembroElegido);
+            if(MiembroExiste){
+                foreach (var miembro in MenusGenerales.ContenedorStaff)
+                {
+                    if(miembro.Id == MiembroElegido){
+                        MenusGenerales.ContenedorStaff.Remove(miembro);
+                        Console.WriteLine("El miembro ha sido borrado con éxito. Por favor, presione enter para continuar");
+                        Console.ReadKey(true);
+                    } 
+                } 
+            }
         }
     }
 }
