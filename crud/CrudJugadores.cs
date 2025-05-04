@@ -79,7 +79,23 @@ namespace ligaBetPlayDOTNET.crud
             } 
         }
         public static void EliminarJugadores(){
-            
+            Console.Clear();
+            VerJugadores();
+            Console.WriteLine("Por favor, ingrese el id del jugador que desea eliminar ");
+            string JugadorElegido = Console.ReadLine();
+            bool JugadorExiste = Utils.ValidarIdJugador(JugadorElegido);
+            if(JugadorExiste){
+                Jugadores JugadorAEliminar = (from jugador in MenusGenerales.ContenedorJugadores
+                                        where JugadorElegido == jugador.Id select jugador).FirstOrDefault();
+
+                MenusGenerales.ContenedorJugadores.Remove(JugadorAEliminar);
+                Console.WriteLine("El jugador ha sido eliminado con éxito.");
+
+            } else {
+                Console.WriteLine("El jugador no existe. Por favor, vuelva a intentarlo.");
+                Console.ReadKey(true);
+                EliminarJugadores();
+            }
         }
     }
 }

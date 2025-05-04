@@ -16,6 +16,8 @@ namespace ligaBetplay.menus
         public static List<Equipos> ContenedorGeneral = new List<Equipos>();
 
         public static List<Jugadores> ContenedorJugadores = new List<Jugadores>();
+
+        public static List<Staff> ContenedorStaff = new List<Staff> ();
         public static void MenuPrincipal (){
             Console.Clear();
             Console.WriteLine(MenusTexts.MenuPrincipalTexto);
@@ -81,7 +83,10 @@ namespace ligaBetplay.menus
                 MenuJugadores();
                 break;
                 case 4:
-                Console.WriteLine("Usted ha escogido  la opción 4");
+                CrudJugadores.EliminarJugadores();
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuJugadores();
                 break;
                 case 5:
                 MenuPrincipal();
@@ -141,7 +146,11 @@ namespace ligaBetplay.menus
             Console.WriteLine(MenusTexts.MenuGestorStaffTexto);
             int NumeroEscogido = Utils.ValidacionNumero(MenusTexts.MenuGestorStaffTexto);
             switch(NumeroEscogido){
-                case 1: 
+                case 1:
+                CrudStaff.AgregarStaff(); 
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuStaff();
                 break;
                 case 2: 
                 break;
