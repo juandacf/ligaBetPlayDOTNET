@@ -38,7 +38,7 @@ namespace ligaBetplay.crud
             {
                 Console.WriteLine($"{equipo.nombre}");
             }
-        }
+        }  
 
         public static void EditarEquipos(){
             Console.Clear();
