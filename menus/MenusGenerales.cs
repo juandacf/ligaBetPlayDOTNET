@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ligaBetplay.constructores;
 using ligaBetplay.crud;
 using ligaBetplay.resources;
+using ligaBetPlayDOTNET.agregarSituaciones;
 using ligaBetPlayDOTNET.crud;
 
 namespace ligaBetplay.menus
@@ -45,10 +46,16 @@ namespace ligaBetplay.menus
                 MenuPrincipal();
                 break;
                 case 4:
+                Console.Clear();
+                AgregarFechas.AgregarFecha();
+                Console.ReadKey(true);
+                MenuPrincipal();
                 break;
                 case 5:
                 break;
                 case 6:
+                Console.Clear();
+                Console.WriteLine("Gracias por usar nuestro software.");
                 break;
                 default:
                 Console.WriteLine(MenusTexts.MensajeOpcionIncorrecta);
