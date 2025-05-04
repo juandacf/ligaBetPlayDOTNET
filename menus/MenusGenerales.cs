@@ -153,8 +153,16 @@ namespace ligaBetplay.menus
                 MenuStaff();
                 break;
                 case 2: 
+                CrudStaff.VerStaff(); 
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuStaff();
                 break;
-                case 3: 
+                case 3:
+                CrudStaff.EditarStaff(); 
+                Console.WriteLine(MenusTexts.MensajeFinal);
+                Console.ReadKey(true);
+                MenuStaff(); 
                 break;
                 case 4: 
                 break;

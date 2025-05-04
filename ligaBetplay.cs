@@ -13,4 +13,4 @@ internal class LigaBetplay
         MenusGenerales.MenuPrincipal();
 
     } 
-}  Hola, 
+}   

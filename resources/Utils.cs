@@ -78,7 +78,16 @@ namespace ligaBetplay.resources
         return false;
     }
 
-    
+    public static bool ValidarIdStaff(string IdStaff){
+        foreach (var miembro in MenusGenerales.ContenedorStaff)
+        {
+            if(IdStaff == miembro.Id){
+                return true;
+            }
+        
+        }
+        return false;
+    }
     }
     
     }

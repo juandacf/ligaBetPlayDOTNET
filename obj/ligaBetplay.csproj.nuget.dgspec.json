@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/juan/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj": {}
+    "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj": {}
   },
   "projects": {
-    "/home/juan/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj": {
+    "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juan/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
+        "projectUniqueName": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
         "projectName": "ligaBetplay",
-        "projectPath": "/home/juan/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
-        "packagesPath": "/home/juan/.nuget/packages/",
-        "outputPath": "/home/juan/Documents/dotnet/ligaBetPlayDOTNET/obj/",
+        "projectPath": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/ligaBetplay.csproj",
+        "packagesPath": "/home/juancaballero/.nuget/packages/",
+        "outputPath": "/home/juancaballero/Documents/dotnet/ligaBetPlayDOTNET/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/juan/.nuget/NuGet/NuGet.Config"
+          "/home/juancaballero/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
