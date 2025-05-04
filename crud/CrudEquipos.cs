@@ -29,7 +29,7 @@ namespace ligaBetplay.crud
                     Console.ReadKey(true);
                 }
                 }             
-        }
+        } 
 
         public static void VerEquipos(){
             Console.Clear();
