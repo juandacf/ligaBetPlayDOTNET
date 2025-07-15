@@ -11,6 +11,7 @@ namespace ligaBetplay.crud
     public class CrudEquipos
     {
             public static void AgregarEquipos (){
+                
                 Console.Clear();
                 bool switchContinuar = true;
                 while (switchContinuar) {
